@@ -143,6 +143,25 @@
     color:black
 }
 
+.technologiesTitle {
+    color: black;
+    font-size: 20px;
+}
+
+.resumeDownload {
+    display: inline-block;
+    margin-top: 24px;
+    padding: 12px 20px;
+    background-color: #24252A;
+    color: #edf0f1;
+    border-radius: 5px;
+}
+
+.resumeDownload:hover,
+.resumeDownload:focus-visible {
+    background-color: #006d87;
+}
+
 @media (max-width:768px) {
     .row {
         display: flex;

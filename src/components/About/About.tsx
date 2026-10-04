@@ -10,8 +10,6 @@ const About: React.FC = () => {
   let img = [styles.imgBox, styles.outerShadow]
   let socialLinkIcons = [styles.outerShadow, styles.hoverInShadow, styles.socialIcon]
 
-  console.log('about.join',styles)
-
   return (
     <section id="about" className={about.join(' ')} data-testid="About">
       <div className={styles.container}>
@@ -32,23 +30,29 @@ const About: React.FC = () => {
             </div>
           </div>
           <div className={styles.aboutInfo}>
-            <p><span></span> I have seven (7) years of experience in analysis, 
-            design, development, testing and implementation expertise in internet and client/server applications.
-            Inspired JavaScript developer and highly passionate and curious about new Front-End development technologies
-            and has ability in mastering them with a keen awareness of new industry developments.
-
-
-         </p>
-         <ul>
-            <div className={styles.skillContainer}>
-                <li className={styles.skillContainerItem}> Javascript(Es6+)</li>
-                <li className={styles.skillContainerItem}> HTML5 & CSS3</li>
-                <li className={styles.skillContainerItem}>Angular </li>
-                <li className={styles.skillContainerItem}>React </li>
-                <li className={styles.skillContainerItem}>Typescript</li>
-                <li className={styles.skillContainerItem}>Node.js</li>
-            </div>
-        </ul>
+            <p>I’m a Full-Stack Software Engineer with 10+ years of experience building enterprise web and desktop applications. My primary experience is with React, TypeScript, JavaScript, Node.js, and AWS. I’ve worked on real-time applications, cloud infrastructure, APIs, and distributed systems using technologies such as WebSockets, AWS Lambda, DynamoDB, CloudFront, and Terraform. I enjoy understanding how systems work end to end and continuously learning new technologies to become a better engineer.</p>
+            <h3 className={styles.technologiesTitle}>Technologies</h3>
+            <ul className={styles.skillContainer}>
+              <li className={styles.skillContainerItem}>JavaScript (ES6+)</li>
+              <li className={styles.skillContainerItem}>TypeScript</li>
+              <li className={styles.skillContainerItem}>React</li>
+              <li className={styles.skillContainerItem}>Angular</li>
+              <li className={styles.skillContainerItem}>Node.js</li>
+              <li className={styles.skillContainerItem}>HTML5 &amp; CSS3</li>
+              <li className={styles.skillContainerItem}>REST APIs &amp; GraphQL</li>
+              <li className={styles.skillContainerItem}>WebSockets</li>
+              <li className={styles.skillContainerItem}>AWS</li>
+              <li className={styles.skillContainerItem}>Terraform</li>
+              <li className={styles.skillContainerItem}>Docker &amp; Kubernetes</li>
+              <li className={styles.skillContainerItem}>Git &amp; CI/CD</li>
+            </ul>
+            <a
+              href={`${process.env.PUBLIC_URL}/srbResumeF.docx`}
+              download="srbResumeF.docx"
+              className={styles.resumeDownload}
+            >
+              Download Resume (.docx)
+            </a>
           </div>
         </div>
       </div>
