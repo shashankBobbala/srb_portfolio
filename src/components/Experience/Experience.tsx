@@ -7,7 +7,7 @@ const Experience: React.FC = () => {
   const exp = ['experience', 'content']
   const eachItem = [styles.timeLineItemInner,styles.outerShadow]
   return (
-    <div className={styles.ExperienceContent} data-testid="Experience">
+    <section id="experience" className={styles.ExperienceContent} data-testid="Experience">
       <div className={styles.row}>
         <div className={exp.join(' ')}>
           <div className={styles.ExperienceTitle}>
@@ -58,7 +58,7 @@ const Experience: React.FC = () => {
         </div>
 
       </div>
-    </div>
+    </section>
   )
 };
 

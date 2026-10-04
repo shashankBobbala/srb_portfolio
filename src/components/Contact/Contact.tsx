@@ -4,16 +4,16 @@ import styles from './Contact.module.css';
 const Contact: React.FC = () => {
   const shadow = [styles.btn1,styles.outerShadow, styles.hoverInShadow]
   return(
-  <div className={styles.Contact} data-testid="Contact">
+  <section id="contact" className={styles.Contact} data-testid="Contact">
      <div className={styles.ContactTitle}>
             <h2 data-heading='contact info'>Contact Me</h2>
           </div>
           <div className={styles.row}> 
           <div className={styles.container}> 
-          <a  href = "mailto:shahsank.kf314@gmail.com" className ={shadow.join(' ')} > Say Hello </a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shashank.kf314%40gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Say Hello (opens Gmail in a new tab)" className={shadow.join(' ')}> Say Hello </a>
            </div>
           </div>
-  </div>
+  </section>
 )};
 
 export default Contact;

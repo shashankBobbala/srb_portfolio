@@ -17,7 +17,7 @@ const Home: React.FC = () => {
   return(
   <div className={styles.Home} data-testid="Home">
 
-    <section className={homeSection.join(' ')} >
+    <section id="home" className={homeSection.join(' ')} >
       <div className={styles.effectWrap}>
       <div className={effectDiv.join(' ')}> 
        </div>   

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './About.module.css';
 import image from '../../assets/shashank-photo.jpeg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faFacebookSquare, faInstagram, faLinkedin, faTwitter, } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const About: React.FC = () => {
   let about = [styles.aboutSection, styles.section]
@@ -13,7 +13,7 @@ const About: React.FC = () => {
   console.log('about.join',styles)
 
   return (
-    <div className={about.join(' ')} data-testid="About">
+    <section id="about" className={about.join(' ')} data-testid="About">
       <div className={styles.container}>
         <div className={styles.row}>
           <div className={styles.sectionTitle}>
@@ -26,16 +26,7 @@ const About: React.FC = () => {
               <img className={img.join(' ')} src={image} alt='profile-pic'></img>
             </div>
             <div className={styles.socialLinks}>
-              <a href='#' className={socialLinkIcons.join(' ')}>
-                <FontAwesomeIcon icon={faFacebookF} />
-              </a>
-              <a href='#' className={socialLinkIcons.join(' ')}>
-                <FontAwesomeIcon icon={faTwitter} />
-              </a>
-              <a href='#' className={socialLinkIcons.join(' ')}>
-                <FontAwesomeIcon icon={faInstagram} />
-              </a>
-              <a href='#' className={socialLinkIcons.join(' ')}>
+              <a href='https://www.linkedin.com/in/shashankbobbala' target='_blank' rel='noopener noreferrer' aria-label='LinkedIn profile (opens in a new tab)' className={socialLinkIcons.join(' ')}>
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </div>
@@ -61,7 +52,7 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 };
 
